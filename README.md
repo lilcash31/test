@@ -30,7 +30,7 @@ npm install
 node tools/render.mjs --workers 3          # 1800 images dans frames/
 python3 tools/audio.py out/audio.wav
 ffmpeg -framerate 30 -i frames/f_%05d.jpg -i out/audio.wav \
-  -c:v libx264 -preset slow -crf 19 -pix_fmt yuv420p -c:a aac -b:a 192k \
+  -c:v libx264 -preset slow -crf 24 -pix_fmt yuv420p -c:a aac -b:a 192k \
   -movflags +faststart -shortest out/ia-stack-next-gen.mp4
 ```
 
